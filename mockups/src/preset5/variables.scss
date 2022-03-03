@@ -1,0 +1,32 @@
+// background
+$background-color:    hsla(0, 0%, 0%, 0);
+  
+// layout  
+$block-alignment:     end; // center start end
+$block-valignment:    end; // center start end
+$block-width:         25%;
+$block-padding:       36px;
+$block-background:    hsla(0, 0%, 0%, 1);
+$text-area-margin:    0;
+$text-alignment:      left; // center left right
+  
+// title  
+$title-family:        'Cormorant'; 
+$title-weight:        300; 
+$title-size:          32px; 
+$title-line-height:   1.125; 
+$title-color:         hsla(0, 100%, 100%, 1); 
+
+// heading
+$heading-family:      'Cormorant';  
+$heading-weight:      500; 
+$heading-size:        16px; 
+$heading-line-height: 1.25; 
+$heading-color:       hsla(0, 100%, 100%, 1); 
+
+// text
+$text-family:         'Cormorant'; 
+$text-weight:         300; 
+$text-size:           16px; 
+$text-line-height:    1.25; 
+$text-color:          hsla(0, 100%, 100%, 1); 

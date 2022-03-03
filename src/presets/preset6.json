@@ -1,0 +1,33 @@
+{
+  "settings": {
+    "fullScreenBackground": true,
+    "showSummary": true,
+    "showOwner": true,
+    "showMediaPreview": false
+  },
+  "styles": {
+    "backgroundColor": "hsla(0, 0%, 0%, 0)", 
+    "blockAlignment": "start",
+    "blockValignment": "end",
+    "blockWidth": "50%",
+    "blockPadding": "48px",
+    "blockBackground": "hsla(0, 0%, 0%, 0)",
+    "textAreaMargin": "0px",
+    "textAlignment": "left",
+    "titleFamily": "Alegreya", 
+    "titleVariant": "700", 
+    "titleSize": "16px", 
+    "titleLineHeight": "1.25", 
+    "titleColor": "hsla(0, 100%, 100%, 1)",  
+    "headingFamily": "Alegreya",
+    "headingVariant": "500", 
+    "headingSize": "16px", 
+    "headingLineHeight": "1.25", 
+    "headingColor": "hsla(0, 100%, 100%, 1)",   
+    "textFamily": "Alegreya",
+    "textVariant": "regular", 
+    "textSize": "16px", 
+    "textLineHeight": "1.25", 
+    "textColor": "hsla(0, 100%, 100%, 1)"
+  }
+}

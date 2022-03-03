@@ -1,0 +1,33 @@
+// background
+$background-overlay-color:    hsla(0, 100%, 100%, 1);
+$background-color:            hsl(0, 100%, 100%); 
+  
+// layout  
+$block-alignment:     end; // center start end
+$block-valignment:    end; // center start end
+$block-width:         35%;
+$block-padding:       48px;
+$block-background:    hsla(0, 0%, 0%, 0);
+$text-area-margin:    0;
+$text-alignment:      left; // center left right
+  
+// title  
+$title-family:        'Roboto'; 
+$title-weight:        500; 
+$title-size:          16px; 
+$title-line-height:   1.25; 
+$title-color:         hsla(0, 0%, 0%, 1); 
+
+// heading
+$heading-family:      'Roboto';  
+$heading-weight:      300; 
+$heading-size:        16px; 
+$heading-line-height: 1.25; 
+$heading-color:       hsla(0, 0%, 0%, 1); 
+
+// text
+$text-family:         'Roboto'; 
+$text-weight:         400; 
+$text-size:           16px; 
+$text-line-height:    1.25; 
+$text-color:          hsla(0, 0%, 0%, 1); 

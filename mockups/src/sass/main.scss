@@ -1,0 +1,141 @@
+@use "variables.scss" as *;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6,
+p {
+  margin: 0;
+}
+
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $background-color;
+}
+
+.fullscreen-background-colour {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: $background-overlay-color;
+}
+
+.column-background {
+  position: relative;
+  flex: auto;
+}
+
+.column-background img,
+.fullscreen-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  min-height: 100vh;
+  justify-content: $block-alignment;
+}
+
+.content-column {
+  display: flex;
+  min-height: 100vh;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: $block-background;
+  min-width: 360px;
+  flex-basis: $block-width;
+  padding: $block-padding;
+  box-sizing: border-box;
+}
+
+.content-row {
+  align-self: $block-valignment;
+}
+
+.image-container {
+  margin-bottom: $block-padding;
+
+  img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+}
+
+.text-container {
+  margin: $text-area-margin;
+  text-align: $text-alignment;
+} 
+
+.title {
+  font-family: $title-family;
+  font-weight: $title-weight;
+  font-size: $title-size;
+  line-height: $title-line-height;
+  color: $title-color;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-family: $heading-family;
+  font-weight: $heading-weight;
+  font-size: $heading-size;
+  line-height: $heading-line-height;
+  color: $heading-color;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-family: $text-family;
+  font-weight: $text-weight;
+  font-size: $text-size;
+  line-height: $text-line-height;
+  color: $text-color;
+  margin-bottom: 24px;
+}
+
+#nft-owner-heading {
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 1680px) {
+  .content-column {
+    padding: calc($block-padding * 1.5);
+  }
+
+  .image-container {
+    margin-bottom: calc($block-padding * 1.5);
+  }
+
+  .text-container {
+    margin: calc($text-area-margin * 1.5); 
+  }
+}
+
+@media all and (min-width: 2560px) {
+  .content-column {
+    padding: calc($block-padding * 2);
+  }
+
+  .image-container {
+    margin-bottom: calc($block-padding * 1.5);
+  }
+
+  .text-container {
+    margin: calc($text-area-margin * 2); 
+  }
+}

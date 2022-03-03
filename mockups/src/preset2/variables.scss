@@ -1,0 +1,32 @@
+// background
+$background-color:    hsla(0, 0%, 0%, 0);
+  
+// layout  
+$block-alignment:     center; // center start end
+$block-valignment:    center; // center start end
+$block-width:         65%;
+$block-padding:       32px;
+$block-background:    hsla(0, 100%, 100%, 0);
+$text-area-margin:    0;
+$text-alignment:      left; // center left right
+  
+// title  
+$title-family:        'Josefin Sans'; 
+$title-weight:        200; 
+$title-size:          60px; 
+$title-line-height:   1.07; 
+$title-color:         hsla(0, 100%, 100%, 1); 
+
+// heading
+$heading-family:      'Josefin Sans';  
+$heading-weight:      600; 
+$heading-size:        20px; 
+$heading-line-height: 1.2; 
+$heading-color:       hsla(0, 100%, 100%, 1); 
+
+// text
+$text-family:         'Cardo'; 
+$text-weight:         400; 
+$text-size:           16px; 
+$text-line-height:    1.25; 
+$text-color:          hsla(0, 100%, 100%, 1); 

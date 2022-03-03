@@ -1,0 +1,33 @@
+// background
+$background-overlay-color:    hsla(0, 100%, 100%, 0);
+$background-color:            hsl(0, 100%, 100%); 
+  
+// layout  
+$block-alignment:     center; // center start end
+$block-valignment:    center; // center start end
+$block-width:         35%;
+$block-padding:       0;
+$block-background:    hsla(0, 100%, 100%, 1);
+$text-area-margin:    32px;
+$text-alignment:      center; // center left right
+  
+// title  
+$title-family:        'Josefin Sans'; 
+$title-weight:        200; 
+$title-size:          20px; 
+$title-line-height:   1.2; 
+$title-color:         hsla(0, 0%, 0%, 1); 
+
+// heading
+$heading-family:      'Josefin Sans';  
+$heading-weight:      400; 
+$heading-size:        16px; 
+$heading-line-height: 1.25; 
+$heading-color:       hsla(0, 0%, 0%, 1); 
+
+// text
+$text-family:         'Josefin Sans'; 
+$text-weight:         200; 
+$text-size:           16px; 
+$text-line-height:    1.25; 
+$text-color:          hsla(0, 0%, 0%, 1); 

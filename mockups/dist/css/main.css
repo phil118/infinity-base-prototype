@@ -1,0 +1,137 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+  margin: 0;
+}
+
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+}
+
+.fullscreen-background-colour {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+}
+
+.column-background {
+  position: relative;
+  flex: auto;
+}
+
+.column-background img,
+.fullscreen-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.content-column {
+  display: flex;
+  min-height: 100vh;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: white;
+  min-width: 360px;
+  flex-basis: 35%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-row {
+  align-self: center;
+}
+
+.image-container {
+  margin-bottom: 0;
+}
+.image-container img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.text-container {
+  margin: 32px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Josefin Sans";
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 1.2;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: black;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-family: "Josefin Sans";
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.25;
+  color: black;
+  margin-bottom: 24px;
+}
+
+#nft-owner-heading {
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 1680px) {
+  .content-column {
+    padding: 0;
+  }
+
+  .image-container {
+    margin-bottom: 0;
+  }
+
+  .text-container {
+    margin: 48px;
+  }
+}
+@media all and (min-width: 2560px) {
+  .content-column {
+    padding: 0;
+  }
+
+  .image-container {
+    margin-bottom: 0;
+  }
+
+  .text-container {
+    margin: 64px;
+  }
+}

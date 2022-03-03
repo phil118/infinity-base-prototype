@@ -1,0 +1,166 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  background: var(--background-color);
+}
+
+h1,h2,h3,h4,h5,h6,
+p {
+  margin: 0;
+}
+
+pre {
+  white-space: pre-line;
+}
+
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fullscreen-background-colour {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-overlay-color);
+}
+
+.column-background {
+  position: relative;
+  flex: auto;
+}
+
+.column-background img,
+.fullscreen-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  min-height: 100vh;
+  justify-content: var(--block-alignment);
+}
+
+.content-column {
+  display: flex;
+  min-height: 100vh;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: var(--block-background);
+  min-width: 360px;
+  flex-basis: var(--block-width);
+  padding: var(--block-padding);
+  box-sizing: border-box;
+}
+
+.content-row {
+  align-self: var(--block-valignment);
+  width: 100%;
+}
+
+.image-container {
+  margin-bottom: var(--block-padding);
+}
+
+.image-container img {
+  max-width: 100%;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.text-container {
+  margin: var(--text-area-margin);
+  text-align: var(--text-alignment);
+} 
+
+.title {
+  font-family: var(--title-family);
+  font-style: var(--title-style);
+  font-weight: var(--title-weight);
+  font-size: var(--title-size);
+  line-height: var(--title-line-height);
+  color: var(--title-color);
+  margin-bottom: 24px;
+  opacity: 0;
+  transition: opacity ease 300ms;
+}
+
+.heading {
+  font-family: var(--heading-family);
+  font-style: var(--heading-style);
+  font-weight: var(--heading-weight);
+  font-size: var(--heading-size);
+  line-height: var(--heading-line-height);
+  color: var(--heading-color);
+  margin-bottom: 24px;
+  opacity: 0;
+  transition: opacity ease 300ms;
+}
+
+.text {
+  font-family: var(--text-family);
+  font-style: var(--text-style);
+  font-weight: var(--text-weight);
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+  color: var(--text-color);
+  margin-bottom: 24px;
+  opacity: 0;
+  transition: opacity ease 300ms;
+}
+
+.wf-active .title,
+.wf-active .heading,
+.wf-active .text {
+  opacity: 1;
+}
+
+.wf-loading .title,
+.wf-loading .heading,
+.wf-loading .text {
+  opacity: 0;
+}
+
+#nft-owner-heading {
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 1920px) {
+  .content-column {
+    padding: calc(var(--block-padding) * 1.5);
+  }
+
+  .image-container {
+    margin-bottom: calc(var(--block-padding) * 1.5);
+  }
+
+  .text-container {
+    margin: calc(var(--text-area-margin) * 1.5); 
+  }
+}
+
+@media all and (min-width: 2560px) {
+  .content-column {
+    padding: calc(var(--block-padding) * 2);
+  }
+
+  .image-container {
+    margin-bottom: calc(var(--block-padding) * 1.5);
+  }
+
+  .text-container {
+    margin: calc(var(--text-area-margin) * 2); 
+  }
+}
